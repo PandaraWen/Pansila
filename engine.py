@@ -48,6 +48,9 @@ def stop():
     gpio.output(rightRed, gpio.LOW)
     gpio.output(rightBlack, gpio.LOW)
 
+def cleanup():
+    gpio.cleanup()
+
 if __name__ == '__main__':
     try:
         setup()
